@@ -1,5 +1,5 @@
 <?php
-    require_once "src/RockPaperScissorsGame.php";
+    require_once "src/RockPaperScissors.php";
 
     class RockPaperScissorsTest extends PHPUnit_Framework_TestCase
     {
@@ -11,12 +11,11 @@
             $second_input = "rock";
 
             //Act
-            $result = $test_RockPaperScissors->rockPaperScissors($first_input, $second_input);
+            $result = $test_RockPaperScissors->rockPaperScissorsGame($first_input, $second_input);
 
 
             //Assert
             $this->assertEquals("It's a draw!", $result);
         }
-
     }
 ?>
