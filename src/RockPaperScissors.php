@@ -38,5 +38,25 @@
             return $return;
 
         }
+
+        function PlayRandom() {
+            $input2 = "";
+            $random_input = rand(1,3);
+
+            if ($random_input == 1) {
+                $input2 = "rock";
+            }
+
+            elseif ($random_input == 2) {
+                $input2 = "paper";
+            }
+
+            elseif ($random_input == 3) {
+                $input2 = "scissors";
+            }
+
+            return $input2;
+        }
+
     }
 ?>
