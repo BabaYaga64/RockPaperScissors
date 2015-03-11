@@ -15,10 +15,14 @@ $app->get("/", function() use ($app) {
 });
 
 $app->post("/results", function () use ($app) {
+    $player1= $_POST['player1'];
+    $player2= $_POST['player2'];
+    
     $game = new RockPaperScissors;
-    $result = $game->rockPaperScissorsGame($_POST['player1'], $_POST['player2']);
+    $result = $game->rockPaperScissorsGame($player1, $player2);
 
-    return $app['twig']->render('results.twig', array('player1' => $result));
+    return $app['twig']->render('results.twig', array(
+        'outcome' => $result, "player1"=>$player1, "player2" => $player2));
 });
 
     return $app;
