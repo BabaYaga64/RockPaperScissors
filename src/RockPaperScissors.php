@@ -12,6 +12,26 @@
             if ($first_input == "rock" && $second_input == "scissors") {
                 return "Player 1 wins!";
             }
+
+            if ($first_input == "rock" && $second_input == "paper") {
+                return "Player 2 wins!";
+            }
+
+            if ($first_input == "paper" && $second_input == "scissors") {
+                return "Player 2 wins!";
+            }
+
+            if ($first_input == "paper" && $second_input == "rock") {
+                return "Player 1 wins!";
+            }
+
+            if ($first_input == "scissors" && $second_input == "rock") {
+                return "Player 2 wins!";
+            }
+
+            if ($first_input == "scissors" && $second_input == "paper") {
+                return "Player 1 wins!";
+            }
         }
     }
 ?>

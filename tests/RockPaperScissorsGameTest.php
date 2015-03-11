@@ -64,5 +64,78 @@
         }
 
 
+        function test_rock_paper()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "rock";
+            $second_input = "paper";
+
+            //Act
+            $result = $test_RockPaperScissors->rockPaperScissorsGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Player 2 wins!", $result);
+        }
+
+
+        function test_paper_scissors()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "paper";
+            $second_input = "scissors";
+
+            //Act
+            $result = $test_RockPaperScissors->rockPaperScissorsGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Player 2 wins!", $result);
+        }
+
+
+        function test_paper_rock()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "paper";
+            $second_input = "rock";
+
+            //Act
+            $result = $test_RockPaperScissors->rockPaperScissorsGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Player 1 wins!", $result);
+        }
+
+
+        function test_scissors_rock()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "scissors";
+            $second_input = "rock";
+
+            //Act
+            $result = $test_RockPaperScissors->rockPaperScissorsGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Player 2 wins!", $result);
+        }
+
+
+        function test_scissors_paper()
+        {
+            //Arrange
+            $test_RockPaperScissors = new RockPaperScissors;
+            $first_input = "scissors";
+            $second_input = "paper";
+
+            //Act
+            $result = $test_RockPaperScissors->rockPaperScissorsGame($first_input, $second_input);
+
+            //Assert
+            $this->assertEquals("Player 1 wins!", $result);
+        }
     }
 ?>
