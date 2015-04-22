@@ -8,7 +8,8 @@
 ###Description
 
 This is an app for the game 'Rock, Paper, Scissors.' You can play with another player and also against the computer. This application also uses PHP Behavior Driven Development methods for writing specs, and Twig templates for displaying the results.
-Technologies Used
+
+###Technologies Used
 
     * PHP
     * PHPUnit
